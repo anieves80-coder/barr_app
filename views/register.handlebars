@@ -1,0 +1,52 @@
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h3><i class="fas fa-pencil-alt"></i> Register as a new user.</h3>
+        </div>
+        <div class="col text-right">
+            <a href="/" class="font-weight-bold"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+    <hr>
+</div>
+<div class="container mt-5">
+    <form id="registerForm">
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="registerUsername"><i class="fas fa-user"></i> Username</label>
+                <input type="text" class="form-control" id="registerUsername" required>                
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="registerEmail"><i class="fas fa-envelope"></i> Email</label>
+                <input type="email" class="form-control" id="registerEmail" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <label for="registerPassword1"><i class="fas fa-lock"></i> Password</label>
+                <input type="password" class="form-control" id="registerPassword1" required>
+            </div>
+        </div>
+        <div class="form-row mb-2">
+            <div class="col-md-4 mb-3">
+                <label for="registerPassword2"><i class="fas fa-lock"></i> Confirm Password</label>
+                <input type="password" class="form-control" id="registerPassword2" required>
+            </div>
+        </div>
+        <div class="form-row mb-3">
+            <div class="col">
+                <span class="text-danger" id="regErrMsg"></span>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-4 mb-3">
+                <button type="reset" class="btn btn-danger">Clear</button>
+                <button type="submit" class="btn btn-info" id="registerButton">Submit</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="scripts/register.js"></script>

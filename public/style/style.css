@@ -1,0 +1,19 @@
+#drinkImg {   
+    height: 25vh;
+    width: 17vw;
+    min-width: 330px;
+    min-height: 400px;    
+}
+
+.checked {
+    color: orange;
+  }
+
+.img-thumb {
+    height: 100px;
+    width: 100px;
+}
+
+.delLink:hover {    
+    text-decoration: underline;
+}
