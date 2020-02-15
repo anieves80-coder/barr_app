@@ -1,6 +1,6 @@
 const mongojs = require('mongojs');
 
-const databaseUrl = process.env.MONGOLAB_URI;
+const databaseUrl = "mongodb://localhost:39523/heroku_t0dv08n5";
 const collections = [ 'usersData', 'savedData' ]; 
 const db = mongojs(databaseUrl, collections);
 
@@ -101,3 +101,9 @@ module.exports = {
 		});
 	},
 };
+
+
+
+
+
+
