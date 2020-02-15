@@ -8,7 +8,7 @@ const session = require('express-session');
 const g_routes = require("./routes/get_routes.js");
 const p_routes = require("./routes/post_routes.js");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(session({
     secret: 'someCrazySecret@123',
