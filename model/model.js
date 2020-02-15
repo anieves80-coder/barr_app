@@ -1,6 +1,6 @@
 const mongojs = require('mongojs');
 
-const databaseUrl = "mongodb://<dbuser>:<dbpassword>@ds139523.mlab.com:39523/heroku_t0dv08n5";
+const databaseUrl = process.env.MONGOLAB_URI;
 const collections = [ 'usersData', 'savedData' ]; 
 const db = mongojs(databaseUrl, collections);
 
