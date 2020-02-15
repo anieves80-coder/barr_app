@@ -1,6 +1,6 @@
 const mongojs = require('mongojs');
 
-const databaseUrl = 'drinksDatabase'; //db name
+const databaseUrl = "mongodb://dogrock2:ariacel2@ds139523.mlab.com:39523/heroku_t0dv08n5";
 const collections = [ 'usersData', 'savedData' ]; 
 const db = mongojs(databaseUrl, collections);
 
