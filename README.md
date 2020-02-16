@@ -7,17 +7,17 @@ An example of this app is deployed at Heroku.
 https://whispering-hollows-75517.herokuapp.com/
 ## Technology Used
 ### Front End
-HTML5
-CSS
-Javascript
-Bootstrap
+HTML5,
+CSS,
+Javascript,
+Bootstrap,
 JQuery
 ### Back End
-Nodejs
-Express
-BCrypt
-Mongodb
-Handlebars Templates
-Express Sessions
-Axios
+Nodejs,
+Express,
+BCrypt,
+Mongodb,
+Handlebars Templates,
+Express Sessions,
+Axios,
 NodeMailer
