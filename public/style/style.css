@@ -17,3 +17,7 @@
 .delLink:hover {    
     text-decoration: underline;
 }
+
+.dropdown {
+    margin-left: 150%;
+}
