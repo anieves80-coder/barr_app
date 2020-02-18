@@ -1,24 +1,40 @@
 <div class="container mt-3">
     <div class="row">
-        <div class="col-sm-1 col-md-5 ">
+        <div class="col-sm-1 col-md-5 col-xs-1">
             <ul class="nav">
                 <li><button id="searchBtn" class="btn btn-outline-success ml-2">Search</button></li>
                 <li class="nav-link font-weight-bold font-italic d-none d-lg-block">
                     <h5 id="navMsg">Search for a random drink.</h5>
                 </li>
+                <li class=" d-block d-sm-none">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MENU
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item nav-link" href="/" id="searchLink"><i class="fas fa-search"></i> Search</a>
+                            <a class="dropdown-item nav-link" href="/saved" id="savedLink"><i class="fas fa-book-open"></i> Saved</a>
+                            <a class="dropdown-item nav-link" href="javascript:void(0)" id="loginLink"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
-        </div>
+        </div>        
         <div class="col">
             <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" id="searchLink" href="/"><i class="fas fa-search"></i> Search</a>
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link font-weight-bold" id="searchLink" href="/"><i class="fas fa-search"></i>
+                        Search</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" id="savedLink" href="/saved"><i class="fas fa-book-open"></i> Saved</a>
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link font-weight-bold" id="savedLink" href="/saved"><i class="fas fa-book-open"></i>
+                        Saved</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link font-weight-bold" id="loginLink" href="javascript:void(0)"><i class="fas fa-sign-in-alt"></i> Login</a>
-                </li>
+                <li class="nav-item d-none d-sm-block">
+                    <a class="nav-link font-weight-bold" id="loginLink" href="javascript:void(0)"><i
+                            class="fas fa-sign-in-alt"></i> Login</a>
+                </li>                
             </ul>
         </div>
     </div>
