@@ -12,12 +12,18 @@ $(document).ready(function() {
 	$("#searchLink").addClass("disabled");
 	$("#savedLink").addClass("disabled");
 	$("#saveBtn").addClass("disabled");
+	$("#searchLink2").addClass("disabled");
+	$("#savedLink2").addClass("disabled");
+	$("#saveBtn2").addClass("disabled");
 
 	$.get("/verifyLogin", function(res){		
 		if(res.status){
 			$("#savedLink").removeClass("disabled");
 			$("#saveBtn").removeClass("disabled");
 			$("#loginLink").html('<i class="fas fa-sign-in-alt"></i> Logout');
+			$("#savedLink2").removeClass("disabled");
+			$("#saveBtn2").removeClass("disabled");
+			$("#loginLink2").html('<i class="fas fa-sign-in-alt"></i> Logout');
 		}
 	});
 	
@@ -123,7 +129,7 @@ const ingredients = (data) => {
 
 // Executes whenever the search button is clicked.
 // Makes a call to the back-end to search for a random drink.
-$('#searchBtn').on('click', function() {	
+$('#searchBtn,#searchBtn2').on('click', function() {	
 	$('#drinkImg').attr('src', '../img/loading.gif');
 	setStars(1);
 	$.get('/search').then(function(data) {
@@ -133,7 +139,7 @@ $('#searchBtn').on('click', function() {
 
 // Executes whenever the save button is clicked.
 // Sends the info to the back-end server to save the data in a database.
-$("#saveBtn").on("click", function(){
+$("#saveBtn,#saveBtn2").on("click", function(){
 	if(!$(this).hasClass("disabled")){
 		const toSave = {
 			drinkId,
@@ -197,7 +203,7 @@ function setStars(num) {
 
 //Calls the login modal if not logged in.
 //If logged in then logs the client out.
-$("#loginLink").on("click", function(){	
+$("#loginLink,#loginLink2").on("click", function(){	
 	$.get("/verifyLogin", function(res){		
 		if(res.status){
 			$.get("/logout");
